@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+	<title>Multipart form</title>
+</head>
+<body>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+	<input type="hidden" name="MAX_FILE_SIZE" value="30000">
+	<input type="file" name="uploadfile">
+	<input type="submit" value="Send File">
+	</form>
+	<hr size="1">
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+	<input type="file" name="userfile[]">
+	<input type="file" name="userfile[]">
+	<input type="submit" value="Send File">
+	</form>
+</body>
+</html>
